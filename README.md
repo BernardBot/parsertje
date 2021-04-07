@@ -11,7 +11,7 @@ Read the [parsec](https://hackage.haskell.org/package/parsec) and [indents](http
 - [Text.Parsec.Language](https://hackage.haskell.org/package/parsec-3.1.14.0/docs/Text-Parsec-Language.html)
 - [Text.Parsec.Token](https://hackage.haskell.org/package/parsec-3.1.14.0/docs/Text-Parsec-Token.html)
 - [Text.Parsec.Expr](https://hackage.haskell.org/package/parsec-3.1.14.0/docs/Text-Parsec-Expr.html)
-- [Text.Parsec.Indent](https://hackage.haskell.org/package/parsec-3.1.14.0/docs/Text-Parsec-Indent.html)
+- [Text.Parsec.Indent](https://hackage.haskell.org/package/indents-0.5.0.1/docs/Text-Parsec-Indent.html)
 
 Other resources:
 - [Kaleidoscope parser](https://www.stephendiehl.com/llvm/#chapter-2-parser-and-ast)
