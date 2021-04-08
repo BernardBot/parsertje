@@ -1,7 +1,5 @@
 module Parser where
 
-import Control.Monad
-
 import Text.Parsec
 import Text.Parsec.Expr
 import Text.Parsec.Indent
