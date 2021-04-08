@@ -11,7 +11,7 @@ executable parsertje
                       Syntax
                       Lexer
                       Parser
-    build-depends:    base ^>=4.14.1.0,
+    build-depends:    base >= 4.0,
                       indents >= 0.5.0.1,
                       mtl >= 2.2.2,
                       parsec >= 3.1.14.0
