@@ -1,12 +1,11 @@
+{-# LANGUAGE DeriveDataTypeable #-}
+
 module Syntax where
 
-import AST
+import Data.Data
+
+import Types
 
 data Expr
   = Expr
-  deriving Show
-
-instance AST Expr where
-  subs Expr = []
-
-  label Expr = "expr"
+  deriving (Show, Data)

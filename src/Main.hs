@@ -1,7 +1,7 @@
 module Main where
 
+import Types
 import Parser
-import AST
 
 main :: IO ()
 main = do
@@ -13,7 +13,7 @@ parseRepl = do
   line <- getLine
   case parseExpr line of
     Left err -> print err
-    Right expr -> putStr (drawAST expr) >> print expr
+    Right expr -> putStr (drawVerticalAST expr) >> print expr
   parseRepl
 
 parseFromFile :: FilePath -> IO ()
@@ -21,5 +21,5 @@ parseFromFile filePath = do
   file <- readFile filePath
   case parseExpr file of
     Left err -> print err
-    Right expr -> putStr (drawAST expr) >> print expr
+    Right expr -> putStr (drawVerticalAST expr) >> print expr
 
