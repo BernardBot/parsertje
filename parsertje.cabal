@@ -12,12 +12,16 @@ executable parsertje
                       Syntax
                       Lexer
                       Parser
+                      Pretty
+                      Test
 
-    build-depends:    base >= 4.0,
+    build-depends:    QuickCheck >= 2.14.2,
+                      base >= 4.0,
                       containers >= 0.6.2.1,
                       indents >= 0.5.0.1,
                       mtl >= 2.2.2,
                       parsec >= 3.1.14.0,
+                      pretty >= 1.1.3.6,
                       pretty-tree >= 0.1.0.0,
                       syb >= 0.7.2.1
 
