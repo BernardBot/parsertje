@@ -7,6 +7,9 @@ import Syntax
 import Parser
 import Pretty
 
+runChecks :: IO ()
+runChecks = quickCheck checkParser
+
 checkParser :: Expr -> Bool
 checkParser ast =
   case parse $ render $ pretty ast of

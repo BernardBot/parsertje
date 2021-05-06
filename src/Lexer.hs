@@ -6,9 +6,6 @@ import Text.Parsec.Language
 
 import Types
 
-lexer :: GenTokenParser StreamP UserStateP MonadP
-lexer = makeTokenParser style
-
 style :: GenLanguageDef StreamP UserStateP MonadP
 style = LanguageDef
         { commentStart    = ""
@@ -23,6 +20,9 @@ style = LanguageDef
         , reservedNames   = []
         , caseSensitive   = True
         }
+
+lexer :: GenTokenParser StreamP UserStateP MonadP
+lexer = makeTokenParser style
 
 identifier     = Text.Parsec.Token.identifier     lexer
 reserved       = Text.Parsec.Token.reserved       lexer
